@@ -11,14 +11,19 @@ import java.util.Scanner;
  * @author MoaathAlrajab
  */
 public class MainClass {
-
+/**
+ *Main  
+ *
+     * @param args
+ */
     public static void main(String[] args) {
       
-        
+        // adding first three students 
+        // Student three is a test of the exception process 
         Freshman std1 = new Freshman("James", 20, 12); // name, age, credits
         Senior std2 = new Senior("John", 30, 90);
         Freshman std3 = new Freshman("John", 30, 90);
-       
+       //imports from terminal 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Student 1's GPA:");
         std1.setGPA(Integer.parseInt(sc.next()));

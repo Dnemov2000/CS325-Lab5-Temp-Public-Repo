@@ -19,7 +19,13 @@ public class Freshman extends Student {
     public Freshman(String name, int age, int credits) {
         super(name, age, credits);
     }
-    @Override
+    
+ /**
+ *Checks to see if Student has less than 85 credits if not returns Illegal Argument Exception
+ * 
+     * @param credits
+ */
+        @Override
     public void setCredits(int credits) {
         
         //credits for Freshmen must be below 85
@@ -33,7 +39,7 @@ public class Freshman extends Student {
            throw new IllegalArgumentException("Freshmen must have above below 85 credits");
            
            
-            //super.setCredits(credits);
+          
         
         }
     }

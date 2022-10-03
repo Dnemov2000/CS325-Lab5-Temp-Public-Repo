@@ -16,13 +16,11 @@ public class Senior extends Student {
 
         setCredits(credits);
     }
-/**
- * Takes credits and prompts if it is larger than 84 credits 
- * 
- * 
+ /**
+ *Checks to see if Student has more than 84 credits if not returns Illegal Argument Exception
  * 
      * @param credits
- */  
+ */
     @Override
     public void setCredits(int credits) {
         
